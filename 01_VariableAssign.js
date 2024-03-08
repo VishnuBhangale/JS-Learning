@@ -20,7 +20,7 @@ console.log("Last Name: ",lastName);
 var age=30;
 console.log("Age: ",age);
 var address="Pune";
-console.log("Adddress: ",address);
+console.log("Address: ",address);
 var pinCode=412105;
 console.log("Pincode: ",pinCode);
 var gender="Male";
