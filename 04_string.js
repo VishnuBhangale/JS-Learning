@@ -28,3 +28,57 @@ var firstName = "Gajanan";
 var lastName= " Kharat";
 var resultConcat = firstName.concat(lastName);
 console.log("Concat result is:", resultConcat);
+console.log("========== replace() ==================")
+var greet = "Good Morning";
+const afterReplace = greet.replace("Morning", "Afternoon");
+console.log(`After replace string is: ${afterReplace}`);
+
+console.log(`========== toUpperCase() ==================`);
+var greet = "Good Morning";
+var greetInUpperCase = greet.toUpperCase();
+console.log(`${greet} in upper case is : ${greetInUpperCase}`);
+
+console.log(`========== toLowerCase() ==================`);
+var greet = "Good Morning";
+var greetInLowerCase = greet.toLowerCase();
+console.log(`${greet} in lower case is : ${greetInLowerCase}`);
+
+console.log(`========== trim() ==================`);
+var greet = " Good Morning ";
+var trim = greet.trim();
+console.log(`${greet} after Trim  is : ${trim}`);
+
+console.log(`========== Include() ==================`);
+var str = "my name is vishnu";
+var include = str.includes('name');
+console.log(`include result is : ${include}`);
+
+console.log(`========== Include() ==================`);
+var str = "my name is vishnu";
+var include = str.includes('Test');
+console.log(`include result is : ${include}`);
+
+console.log(`========== Slice() ==================`);
+var str = "Developers World";
+var slice = str.slice(0,9);
+console.log(`slice result is : ${slice}`);
+
+console.log(`========== Slice() ==================`);
+var str = "Developers World";
+var slice = str.slice(3,6);
+console.log(`slice result is : ${slice}`);
+
+//Get Trim space length
+console.log(`========== Get Total space ==================`);
+var greet = "  Good Morning  ";
+var trim = greet.trim();
+var trimlen=trim.length;
+console.log(`${greet} length is : ${trim.length}`);
+var len=greet.length;
+var greetlength=greet.length;
+console.log(`length before Trim : ${greetlength}`);
+
+var totalspace=greetlength-trimlen;
+console.log(`Total space : ${totalspace}`);
+
+
