@@ -55,8 +55,8 @@ console.log(`include result is : ${include}`);
 
 console.log(`========== Include() ==================`);
 var str = "my name is vishnu";
-var include = str.includes('Test');
-console.log(`include result is : ${include}`);
+var include = str.includes('NAME');
+console.log(`include result for NAME is : ${include}`);
 
 console.log(`========== Slice() ==================`);
 var str = "Developers World";
@@ -69,16 +69,48 @@ var slice = str.slice(3,6);
 console.log(`slice result is : ${slice}`);
 
 //Get Trim space length
-console.log(`========== Get Total space ==================`);
-var greet = "  Good Morning  ";
-var trim = greet.trim();
-var trimlen=trim.length;
-console.log(`${greet} length is : ${trim.length}`);
-var len=greet.length;
-var greetlength=greet.length;
-console.log(`length before Trim : ${greetlength}`);
+console.log(`========== trim() ==================`);
+var greet = "   Good Morning   ";
+var lengthBeforeTrim = greet.length;
+console.log(` ${greet} it's length is : ${lengthBeforeTrim} `);
 
-var totalspace=greetlength-trimlen;
-console.log(`Total space : ${totalspace}`);
+var greetAfterTrim = greet.trim();
+var lengthAfterTrim = greetAfterTrim.length;
+console.log(` ${greetAfterTrim} it's length is : ${lengthAfterTrim} `);
 
+console.log(`Total spaces removed is ${lengthBeforeTrim-lengthAfterTrim}`);
 
+console.log(`========== search() ==================`);
+var greet = "Good Morning";
+var result = greet.search("Morning");
+console.log(`'Morning' is available at ${result}`);
+
+var result = greet.search("r");
+console.log(`'r' is available at ${result}`);
+
+console.log(`========== slice() ==================`);
+var greet = "Good Morning";
+var result = greet.slice(3, 10);
+console.log(`Slice is ${result}`);
+
+console.log(`========== split() ==================`);
+var greet = "Good Morning";
+var resultValue = greet.split(" ")
+console.log(resultValue);
+console.log(`Total words are: ${resultValue.length}`);
+
+console.log("=========Using Function WAP to count total word from string============");
+function totalWord(arg)
+{
+    var resultValue = arg.split(" ")
+    return resultValue.length;
+    
+}
+console.log("=========First String============");
+var str1="I am happy Buddy";
+var result=totalWord(str1);
+console.log(`Total words are: ${result}`);
+console.log("=========Second String============");
+var str2="I am learning JS the language of internet";
+result=totalWord(str2);
+console.log(`Total words are: ${result}`);
