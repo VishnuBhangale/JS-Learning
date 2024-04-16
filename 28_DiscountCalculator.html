@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+        <!-- Google Font Family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon" />
+        <style>
+           h2{
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+           }
+            .form-css{
+                border: 1px solid cadetblue;
+                width: 30%;
+                border-radius: 10px;
+                margin-top: 10px;
+                color: cadetblue;
+                font-family: "Poppins", sans-serif;
+                box-shadow: 10px 10px rgb(153, 164, 168);
+            }
+            #span-text{
+                padding-bottom: 1%;
+            }
+            input[type="text"],input[type="number"]{
+                width: 100%;
+                padding: 5px 0px;
+                font-family: "Poppins", sans-serif;
+                font-size: 20px;
+                border-radius: 2px;
+                border-color: cadetblue;
+                color: cadetblue;
+            }
+            button{
+                width: 100%;
+                background-color: #4caf50;
+                border-radius: 5px;
+                padding: 10px 0px;
+                margin: 10px 0px;
+                color: white;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            button:hover{
+                color: burlywood;
+            }
+        </style>
+</head>
+<body>
+    <!-- <form class="form-css"> -->
+    <div class="form-css">
+        <h2>Discount Calculator</h2>         
+        <table>
+            <tbody>
+                <tr>
+                    <td id="span-text">Enter the Bill amount and discount in percentage</td>                    
+                </tr>
+                <tr>
+                    <td class="tdclass">Bill Amount</td>                    
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="" id="txtValue" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdclass">Discount Percentage</td>                    
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" name="" id="txtDiscount" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdclass">
+                        <button type="submit" id="btnCalculate">Calculate</button>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td id="span-text">
+                        
+                        Total Discount Amount </td>
+                </tr> -->
+            </tbody>
+          </table>
+          <div class="result">
+        
+          </div>
+        </div>
+    <!-- </form> -->
+    <script src="28_DiscountCalScript.js"></script> 
+</body>
+</html>
